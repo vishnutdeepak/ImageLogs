@@ -1,45 +1,93 @@
+html, body { margin: 0; padding: 0; } 
+
 nav{
+
+
 
 font-family: 'Roboto Condensed', sans-serif;
 
-padding: 1px;
+margin-left: 0px;
+
+
+
 vertical-align: middle;
+
   background-color:#2a4166;
+height: 100%;
+width: 100%;
+
 
 }
+
+
+
+
 
 
 
 ul{
+
 	margin-top: 40px;
+
 }
 
 
-ul.navigation li a.on
-{
-    background:yellow;
-    padding:2px 6px;
-}
+
+
+
+
+
+
+
+
 
 
 
 a:hover{
 
+
+
   color: #cadbf7;
+
 transition:0.1s ease;
+
+
 
   background-color: #26364f;
 
+
+
 }
+
+
 
 .navbar-header{
+
 	margin-top: 20px;
+
 	margin-left: 3em;
+
+
 
 }
 
+
+.row{
+
+
+
+
+	margin: 0px;
+	padding: 0px;
+}
 .active>a{
+
+
 
   background-color: #616161;
 
+
+
 }
+
+html, body { margin: 0; padding: 0; } 

@@ -1,51 +1,102 @@
-
 .container {
+
     display: grid;
+
     grid-template-columns: 10% auto;
+    
 }
+
 .col {
+
     padding: .4em 1.3em;
+    margin-left: 40px;
+
 }
+
 .color-dark {
+margin-left: 0px;
+    padding: 0px;
     background: #216b9e;
+
 }
+
 .color-light {
+
     background: #053759;
+
 }
+
+
+
 
 
 button.clear {
+
     border: 0;
+
     display:inline-block;
+
     font-size: 18px;
+
     margin-top: 20px;
+
     background:#3cb4b7;
+
     
+
     color:#FFF;
+
     margin-bottom:1em;
+
     cursor:pointer;
+
     width: 100px;
+
 }
 
+
+
 button.clear:hover {
+
     
+
     background:#49c9cc;
+
     
+
     color:#FFFAFF;
+
     
+
 }
+
+
+
 
 
 .life-container {
+
     font-family: 'Open Sans Condensed', sans-serif;
+
     background:#3cb4b7;
+
     padding:1.5em;
+    color: #FFF;
+
     font-weight:bold;
+
    width: 33%;
+
     margin-left: 33%;
+
 }
+
 h2{
+
     padding: 3px;
+
     margin-left: 25px;
+
     font-size: 18px;
+
 }

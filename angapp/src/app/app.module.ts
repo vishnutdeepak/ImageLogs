@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ImageDetailComponent } from './image-detail/image-detail.component';
+
 import { MessageService } from './message.service'
 import { OrderModule } from 'ngx-order-pipe';
 import { DataService } from './data.service';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,17 @@ import { HttpModule } from '@angular/http';
     HomeComponent,
     AdminComponent,
     NavbarComponent,
-    ImageDetailComponent
+   
+    
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     OrderModule,
-    HttpModule
+    HttpModule,
+    FormsModule,
+    HttpClientModule
    
   ],
   providers: [ImageService,MessageService,DataService],
