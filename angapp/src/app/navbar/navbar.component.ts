@@ -12,6 +12,7 @@ import { Component, OnInit } from '@angular/core';
 
 })
 
+
 export class NavbarComponent implements OnInit {
 
   title = 'Gallery';
@@ -30,6 +31,11 @@ export class NavbarComponent implements OnInit {
 
   }
 
+getbold(val: string){
+	val=val.bold();
+	this.title = val;
+	return val;
 
+}
 
 }

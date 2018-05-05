@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { MessageService } from './message.service'
+import { OrderModule } from 'ngx-order-pipe';
 
 
 @NgModule({
@@ -21,9 +23,10 @@ import { ImageDetailComponent } from './image-detail/image-detail.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    OrderModule
    
   ],
-  providers: [ImageService],
+  providers: [ImageService,MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

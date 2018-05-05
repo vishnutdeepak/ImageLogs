@@ -1,3 +1,21 @@
-<p>
-  admin works!
-</p>
+
+<div class="container color-dark">
+
+
+<div class="col">
+  <h2>Activity</h2>
+  
+</div>
+<button class="clear"
+          (click)="messageService.clear()"><strong>CLEAR</strong></button>
+
+</div>
+
+
+<div *ngIf="messageService.messages.length">
+<div class="color-light" [@goals]="goals.length">
+  
+  <p class ="life-container" *ngFor='let message of messageService.messages'> {{message}}  </p>
+
+</div>
+</div>
