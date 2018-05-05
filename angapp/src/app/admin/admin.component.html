@@ -15,6 +15,7 @@
 <div *ngIf="messageService.messages.length">
 <div class="color-light" [@goals]="goals.length">
   
+  <p class ="life-container" *ngFor="let user of users">{{user.name}}</p>
   <p class ="life-container" *ngFor='let message of messageService.messages'> {{message}}  </p>
 
 </div>

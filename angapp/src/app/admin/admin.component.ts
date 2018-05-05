@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../message.service';
 import { OrderModule } from 'ngx-order-pipe';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-admin',
@@ -9,8 +10,13 @@ import { OrderModule } from 'ngx-order-pipe';
 })
 export class AdminComponent implements OnInit {
  order: string = 'name';
+users: Array<any>;
+  constructor(public messageService: MessageService,private _dataService:DataService) { 
 
-  constructor(public messageService: MessageService) { }
+
+this._dataService.getUsers().subscribe(res => this.users = res);
+
+  }
 
   ngOnInit() {
   }

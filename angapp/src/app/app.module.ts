@@ -10,7 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
 import { MessageService } from './message.service'
 import { OrderModule } from 'ngx-order-pipe';
-
+import { DataService } from './data.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,11 @@ import { OrderModule } from 'ngx-order-pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OrderModule
+    OrderModule,
+    HttpModule
    
   ],
-  providers: [ImageService,MessageService],
+  providers: [ImageService,MessageService,DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
