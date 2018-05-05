@@ -1,0 +1,11 @@
+<br>
+<br>
+
+
+<div class="row">
+	<ul id="mainimages">
+		<li *ngFor="let image of visibleImages">
+			<img src="{{image.url}}" (click)="logclick(image.id)" (mouseenter) ="mouseEnter('Started hovering on '+image.id) "  (mouseleave) ="mouseLeave('Stopped hovering on '+ image.id)" class="tn" width="200" height ="200">
+		</li>
+	</ul>
+</div>
